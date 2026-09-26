@@ -1,0 +1,55 @@
+{
+  "success": true,
+  "appointment_id": null,
+  "final_answer": "Doctor: Dr. Suresh  \nDate: 2026-08-24  \n\nTotal Appointments: 4  \nConfirmed Appointments: 2  \nUnconfirmed Appointments: 1  \nPending Appointments: 1  \nTotal Scheduled Minutes: 150  \n\nAppointments:  \n- **A001** \u2013 Ravi Kumar \u2013 09:00 \u2013 Confirmed \u2013 30\u202fmin  \n- **A003** \u2013 Meena Devi \u2013 10:00 \u2013 Confirmed \u2013 45\u202fmin  \n- **A005** \u2013 Sanjay Kumar \u2013 11:00 \u2013 Unconfirmed \u2013 30\u202fmin  \n- **A007** \u2013 Vijay R \u2013 12:00 \u2013 Pending \u2013 45\u202fmin",
+  "trace": [
+    {
+      "tool": "get_schedule_context",
+      "arguments": {
+        "appointment_date": "2026-08-24",
+        "doctor": "Dr. Suresh"
+      },
+      "result": {
+        "success": true,
+        "doctor": "Dr. Suresh",
+        "appointment_date": "2026-08-24",
+        "total_appointments": 4,
+        "confirmed_appointments": 2,
+        "unconfirmed_appointments": 1,
+        "pending_appointments": 1,
+        "total_scheduled_minutes": 150,
+        "appointments": [
+          {
+            "appointment_id": "A001",
+            "patient_name": "Ravi Kumar",
+            "time_slot": "09:00",
+            "status": "Confirmed",
+            "duration": 30
+          },
+          {
+            "appointment_id": "A003",
+            "patient_name": "Meena Devi",
+            "time_slot": "10:00",
+            "status": "Confirmed",
+            "duration": 45
+          },
+          {
+            "appointment_id": "A005",
+            "patient_name": "Sanjay Kumar",
+            "time_slot": "11:00",
+            "status": "Unconfirmed",
+            "duration": 30
+          },
+          {
+            "appointment_id": "A007",
+            "patient_name": "Vijay R",
+            "time_slot": "12:00",
+            "status": "Pending",
+            "duration": 45
+          }
+        ]
+      }
+    }
+  ],
+  "error": null
+}

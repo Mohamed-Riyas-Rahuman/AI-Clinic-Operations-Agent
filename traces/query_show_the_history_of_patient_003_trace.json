@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "appointment_id": null,
+  "final_answer": "Patient: Meena Devi\nPatient ID: P003\nPrevious no-shows: 3\nPrevious reschedules: 1\nLast confirmed appointment/date: 24-08-2026",
+  "trace": [
+    {
+      "tool": "get_patient_history",
+      "arguments": {
+        "patient_id": "P003"
+      },
+      "result": {
+        "success": true,
+        "patient_id": "P003",
+        "patient_name": "Meena Devi",
+        "no_show_count": 3,
+        "reschedule_count": 1,
+        "last_confirmed_date": "24-08-2026"
+      }
+    }
+  ],
+  "error": null
+}

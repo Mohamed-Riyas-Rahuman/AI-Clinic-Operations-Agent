@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "appointment_id": "A001",
+  "final_answer": "Appointment: A001  \nPatient: Ravi Kumar  \nDoctor: Dr. Suresh  \nDate & Time: 24-08-2026 09:00  \n\nRisk Level: LOW  \nConfidence: HIGH  \nEscalation: NO  \n\nKey Evidence:\n- Appointment status is **Confirmed**; notes indicate the patient usually confirms promptly.\n- Patient history shows **0** previous no\u2011shows and **0** reschedules; last confirmed date was **23-08-2026**, i.e., the day before the appointment.\n- No conflicting signals; recent confirmation and clean attendance record suggest reliable attendance.\n\nDecision:\nAll available evidence points to a reliable attendance pattern with recent confirmation and no prior issues, leading to a low no\u2011show risk.\n\nRecommended Action:\nSend a routine reminder prior to the appointment.",
+  "trace": [
+    {
+      "tool": "get_appointment_details",
+      "arguments": {
+        "appointment_id": "A001"
+      },
+      "result": {
+        "success": true,
+        "appointment_id": "A001",
+        "patient_name": "Ravi Kumar",
+        "patient_id": "P001",
+        "doctor": "Dr. Suresh",
+        "appointment_date": "24-08-2026",
+        "time_slot": "09:00",
+        "appointment_type": "General Consultation",
+        "status": "Confirmed",
+        "consultation_duration_mins": 30,
+        "notes": "Patient usually confirms appointments promptly."
+      }
+    },
+    {
+      "tool": "get_patient_history",
+      "arguments": {
+        "patient_id": "P001"
+      },
+      "result": {
+        "success": true,
+        "patient_id": "P001",
+        "patient_name": "Ravi Kumar",
+        "no_show_count": 0,
+        "reschedule_count": 0,
+        "last_confirmed_date": "23-08-2026"
+      }
+    }
+  ],
+  "error": null
+}

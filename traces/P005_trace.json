@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "appointment_id": null,
+  "final_answer": "Patient: Sanjay Kumar  \nPatient ID: P005  \nPrevious no-shows: 5  \nPrevious reschedules: 3  \nLast confirmed appointment/date: 18-08-2026",
+  "trace": [
+    {
+      "tool": "get_patient_history",
+      "arguments": {
+        "patient_id": "P005"
+      },
+      "result": {
+        "success": true,
+        "patient_id": "P005",
+        "patient_name": "Sanjay Kumar",
+        "no_show_count": 5,
+        "reschedule_count": 3,
+        "last_confirmed_date": "18-08-2026"
+      }
+    }
+  ],
+  "error": null
+}

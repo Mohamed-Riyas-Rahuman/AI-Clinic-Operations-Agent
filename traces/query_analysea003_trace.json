@@ -1,0 +1,88 @@
+{
+  "success": true,
+  "appointment_id": "A003",
+  "final_answer": "Appointment: A003  \nPatient: Meena Devi  \nDoctor: Dr. Suresh  \nDate & Time: 24-08-2026 10:00  \n\nRisk Level: MODERATE  \nConfidence: HIGH  \n\nKey Evidence:  \n- 3 prior no\u2011shows and 1 reschedule in patient history.  \n- Appointment status is Confirmed and was confirmed today.  \n- Last confirmed date matches today's appointment date.  \n\nDecision:  \nDespite a history of missed appointments, the recent confirmation today and current confirmed status reduce the risk. The patient is likely to attend, but a reminder could be beneficial.  \n\nRecommended Action:  \nSend a friendly reminder 24\u202fhours before the appointment to reinforce commitment.  \n\nEscalation: NO",
+  "trace": [
+    {
+      "tool": "get_appointment_details",
+      "arguments": {
+        "appointment_id": "A003"
+      },
+      "result": {
+        "success": true,
+        "appointment_id": "A003",
+        "patient_name": "Meena Devi",
+        "patient_id": "P003",
+        "doctor": "Dr. Suresh",
+        "appointment_date": "24-08-2026",
+        "time_slot": "10:00",
+        "appointment_type": "General Consultation",
+        "status": "Confirmed",
+        "consultation_duration_mins": 45,
+        "notes": "Confirmed today despite previous missed appointments."
+      }
+    },
+    {
+      "tool": "get_patient_history",
+      "arguments": {
+        "patient_id": "P003"
+      },
+      "result": {
+        "success": true,
+        "patient_id": "P003",
+        "patient_name": "Meena Devi",
+        "no_show_count": 3,
+        "reschedule_count": 1,
+        "last_confirmed_date": "24-08-2026"
+      }
+    },
+    {
+      "tool": "get_schedule_context",
+      "arguments": {
+        "appointment_date": "24-08-2026",
+        "doctor": "Dr. Suresh"
+      },
+      "result": {
+        "success": true,
+        "doctor": "Dr. Suresh",
+        "appointment_date": "24-08-2026",
+        "total_appointments": 4,
+        "confirmed_appointments": 2,
+        "unconfirmed_appointments": 1,
+        "pending_appointments": 1,
+        "total_scheduled_minutes": 150,
+        "appointments": [
+          {
+            "appointment_id": "A001",
+            "patient_name": "Ravi Kumar",
+            "time_slot": "09:00",
+            "status": "Confirmed",
+            "duration": 30
+          },
+          {
+            "appointment_id": "A003",
+            "patient_name": "Meena Devi",
+            "time_slot": "10:00",
+            "status": "Confirmed",
+            "duration": 45
+          },
+          {
+            "appointment_id": "A005",
+            "patient_name": "Sanjay Kumar",
+            "time_slot": "11:00",
+            "status": "Unconfirmed",
+            "duration": 30
+          },
+          {
+            "appointment_id": "A007",
+            "patient_name": "Vijay R",
+            "time_slot": "12:00",
+            "status": "Pending",
+            "duration": 45
+          }
+        ]
+      }
+    }
+  ],
+  "error": null
+}

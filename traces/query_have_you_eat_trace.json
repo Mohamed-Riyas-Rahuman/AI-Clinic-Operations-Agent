@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "appointment_id": null,
+  "final_answer": "I\u2019m here to help with CareFirst Clinic\u2019s operational queries, such as:\n\n- Retrieving appointment details  \n- Showing a patient\u2019s attendance history  \n- Looking up a doctor\u2019s schedule  \n- Analyzing the no\u2011show risk for a specific appointment  \n\nIf you have a question related to any of those topics, please let me know!",
+  "trace": [],
+  "error": null
+}

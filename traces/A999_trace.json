@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "appointment_id": "A999",
+  "final_answer": "The appointment ID **A999** was not found in the clinic dataset. If you have a different appointment ID or need information about a patient, doctor, or schedule, please let me know.",
+  "trace": [
+    {
+      "tool": "get_appointment_details",
+      "arguments": {
+        "appointment_id": "A999"
+      },
+      "result": {
+        "success": false,
+        "error": "Appointment A999 was not found in the clinic dataset."
+      }
+    }
+  ],
+  "error": null
+}

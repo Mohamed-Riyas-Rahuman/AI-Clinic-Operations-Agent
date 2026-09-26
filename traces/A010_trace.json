@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "appointment_id": "A010",
+  "final_answer": "Appointment: A010  \nPatient: Divya P  \nDoctor: Dr. Priya  \nDate & Time: 25-08-2026 10:00  \n\nRisk Level: MODERATE  \nConfidence: HIGH  \nEscalation: NO  \n\nKey Evidence:\n- Appointment status is **Confirmed** and notes indicate the confirmation is recent (last confirmed\u202fdate\u202f24\u201108\u20112026, one day before the visit).  \n- Patient history shows **2 previous no\u2011shows** and **0 reschedules**.  \n- No\u2011show history signals unreliability, while the recent confirmation and current confirmed status mitigate that risk.  \n\nDecision:\nDivya P has a pattern of missed appointments, which raises concern, but the appointment is confirmed just a day prior, suggesting she is likely to attend this time. The mixed signals lead to a moderate risk assessment.  \n\nRecommended Action:\nSend a priority reminder (e.g., a phone call or SMS) on the day before the appointment to reinforce attendance.",
+  "trace": [
+    {
+      "tool": "get_appointment_details",
+      "arguments": {
+        "appointment_id": "A010"
+      },
+      "result": {
+        "success": true,
+        "appointment_id": "A010",
+        "patient_name": "Divya P",
+        "patient_id": "P010",
+        "doctor": "Dr. Priya",
+        "appointment_date": "25-08-2026",
+        "time_slot": "10:00",
+        "appointment_type": "General Consultation",
+        "status": "Confirmed",
+        "consultation_duration_mins": 30,
+        "notes": "Current confirmation is recent; history shows some missed appointments."
+      }
+    },
+    {
+      "tool": "get_patient_history",
+      "arguments": {
+        "patient_id": "P010"
+      },
+      "result": {
+        "success": true,
+        "patient_id": "P010",
+        "patient_name": "Divya P",
+        "no_show_count": 2,
+        "reschedule_count": 0,
+        "last_confirmed_date": "24-08-2026"
+      }
+    }
+  ],
+  "error": null
+}

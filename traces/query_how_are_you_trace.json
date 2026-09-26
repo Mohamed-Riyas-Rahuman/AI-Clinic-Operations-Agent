@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "appointment_id": null,
+  "final_answer": "I\u2019m just a virtual assistant, so I don\u2019t have feelings, but I\u2019m ready to help!  \nI can assist with:\n\n- **Appointment risk analysis** (e.g., \u201cAnalyze A003\u201d)\n- **Appointment details** (e.g., \u201cGive me the details of A003\u201d)\n- **Patient history** (e.g., \u201cShow the history of patient P003\u201d)\n- **Doctor schedules** (e.g., \u201cWhat are the appointments for Dr. Suresh on 2026\u201108\u201124?\u201d)\n\nIf you have any of those questions, just let me know!",
+  "trace": [],
+  "error": null
+}

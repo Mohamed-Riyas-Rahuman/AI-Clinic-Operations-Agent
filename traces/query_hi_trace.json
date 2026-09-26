@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "appointment_id": null,
+  "final_answer": "Hello! How can I assist you today?  \n\n- Would you like appointment details, a patient\u2019s history, a doctor\u2019s schedule, or a no\u2011show risk analysis?  \n- If you have a specific appointment ID (e.g., **A003**) or patient ID (e.g., **P003**) in mind, please let me know.",
+  "trace": [],
+  "error": null
+}

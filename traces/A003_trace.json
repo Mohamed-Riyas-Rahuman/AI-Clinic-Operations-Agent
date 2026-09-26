@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "appointment_id": "A003",
+  "final_answer": "Appointment: A003  \nPatient: Meena Devi  \nDoctor: Dr. Suresh  \nDate & Time: 24-08-2026 10:00  \n\nRisk Level: MODERATE  \nConfidence: MEDIUM  \nEscalation: NO  \n\nKey Evidence:\n- Appointment status is **Confirmed**; notes indicate the patient confirmed today despite prior missed appointments.  \n- Patient history shows **3 previous no\u2011shows** and **1 reschedule**.  \n- Last confirmed date is the same day as the appointment (24\u201108\u20112026).  \n- Schedule context for Dr. Suresh on this date is unavailable, so no additional load\u2011related signals are present.  \n\nDecision:\nThe patient has a notable history of no\u2011shows, which raises concern, but the current appointment was confirmed today, providing a mitigating signal. With the confirmation being recent and the appointment status already confirmed, the overall risk is assessed as moderate rather than high.\n\nRecommended Action:\nSend a priority reminder (e.g., SMS or phone call) and monitor for any changes in confirmation status.",
+  "trace": [
+    {
+      "tool": "get_appointment_details",
+      "arguments": {
+        "appointment_id": "A003"
+      },
+      "result": {
+        "success": true,
+        "appointment_id": "A003",
+        "patient_name": "Meena Devi",
+        "patient_id": "P003",
+        "doctor": "Dr. Suresh",
+        "appointment_date": "24-08-2026",
+        "time_slot": "10:00",
+        "appointment_type": "General Consultation",
+        "status": "Confirmed",
+        "consultation_duration_mins": 45,
+        "notes": "Confirmed today despite previous missed appointments."
+      }
+    },
+    {
+      "tool": "get_patient_history",
+      "arguments": {
+        "patient_id": "P003"
+      },
+      "result": {
+        "success": true,
+        "patient_id": "P003",
+        "patient_name": "Meena Devi",
+        "no_show_count": 3,
+        "reschedule_count": 1,
+        "last_confirmed_date": "24-08-2026"
+      }
+    },
+    {
+      "tool": "get_schedule_context",
+      "arguments": {
+        "appointment_date": "2026-08-24",
+        "doctor": "Dr. Suresh"
+      },
+      "result": {
+        "success": false,
+        "error": "No schedule found for Dr. Suresh on 2026-08-24 in the clinic dataset."
+      }
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,26 @@
+appointment_id,patient_name,patient_id,doctor,appointment_date,time_slot,appointment_type,status,no_show_count,reschedule_count,last_confirmed_date,consultation_duration_mins,notes
+A001,Ravi Kumar,P001,Dr. Suresh,24-08-2026,09:00,General Consultation,Confirmed,0,0,23-08-2026,30,Patient usually confirms appointments promptly.
+A002,Arun Raj,P002,Dr. Priya,24-08-2026,09:30,Follow-up,Unconfirmed,4,2,20-08-2026,30,Previous attendance has been inconsistent.
+A003,Meena Devi,P003,Dr. Suresh,24-08-2026,10:00,General Consultation,Confirmed,3,1,24-08-2026,45,Confirmed today despite previous missed appointments.
+A004,Karthik M,P004,Dr. Priya,24-08-2026,10:30,Follow-up,Confirmed,0,1,23-08-2026,30,Reliable patient with one previous reschedule.
+A005,Sanjay Kumar,P005,Dr. Suresh,24-08-2026,11:00,Consultation,Unconfirmed,5,3,18-08-2026,30,Has repeatedly missed or rescheduled appointments.
+A006,Priya S,P006,Dr. Priya,24-08-2026,11:30,Follow-up,Confirmed,1,0,24-08-2026,30,No-show history is low and appointment was confirmed today.
+A007,Vijay R,P007,Dr. Suresh,24-08-2026,12:00,General Consultation,Pending,2,2,,45,Confirmation date is unavailable.
+A008,Anitha K,P008,Dr. Priya,25-08-2026,09:00,Follow-up,Confirmed,0,0,24-08-2026,30,First recorded appointment; no previous attendance issues.
+A009,Mohan Das,P009,Dr. Suresh,25-08-2026,09:30,Consultation,Unconfirmed,3,2,19-08-2026,60,Patient has a pattern of late confirmation and rescheduling.
+A010,Divya P,P010,Dr. Priya,25-08-2026,10:00,General Consultation,Confirmed,2,0,24-08-2026,30,Current confirmation is recent; history shows some missed appointments.
+A011,Rahul N,P011,Dr. Suresh,25-08-2026,10:30,Follow-up,Confirmed,1,2,22-08-2026,30,Several reschedules but only one previous no-show.
+A012,Lakshmi V,P012,Dr. Priya,25-08-2026,11:00,Consultation,Unconfirmed,0,0,21-08-2026,45,"No previous no-shows, but current appointment is not confirmed."
+A013,Suresh B,P013,Dr. Suresh,25-08-2026,11:30,General Consultation,Confirmed,6,4,24-08-2026,30,Very high historical no-show and reschedule frequency.
+A014,Nisha P,P014,Dr. Priya,25-08-2026,12:00,Follow-up,Confirmed,0,1,24-08-2026,30,Generally reliable; recently confirmed.
+A015,Imran A,P015,Dr. Suresh,26-08-2026,09:00,Consultation,Pending,2,1,,60,Current confirmation information is missing.
+A016,Deepa R,P016,Dr. Priya,26-08-2026,09:30,General Consultation,Confirmed,4,3,26-08-2026,30,High historical risk but confirmed on the appointment date.
+A017,Manoj K,P017,Dr. Suresh,26-08-2026,10:00,Follow-up,Unconfirmed,1,0,20-08-2026,30,Low no-show history but no recent confirmation.
+A018,Farzana M,P018,Dr. Priya,26-08-2026,10:30,Consultation,Confirmed,0,2,25-08-2026,45,"No no-show history, but has rescheduled twice."
+A019,Gokul S,P019,Dr. Suresh,26-08-2026,11:00,General Consultation,Unconfirmed,3,0,17-08-2026,30,Previous no-shows combined with no recent confirmation.
+A020,Harini T,P020,Dr. Priya,26-08-2026,11:30,Follow-up,Confirmed,1,1,25-08-2026,30,Moderate history with recent confirmation.
+A021,Vimal J,P021,Dr. Suresh,27-08-2026,09:00,Consultation,Pending,0,0,,45,New patient; insufficient history and confirmation information.
+A022,Swetha L,P022,Dr. Priya,27-08-2026,09:30,General Consultation,Confirmed,5,0,27-08-2026,30,Multiple previous no-shows but confirmed today.
+A023,Naveen P,P023,Dr. Suresh,27-08-2026,10:00,Follow-up,Confirmed,0,3,26-08-2026,30,No previous no-shows but repeated rescheduling.
+A024,Asha N,P024,Dr. Priya,27-08-2026,10:30,Consultation,Unconfirmed,2,2,20-08-2026,60,Both no-show and reschedule history indicate elevated concern.
+A025,Dinesh R,P025,Dr. Suresh,27-08-2026,11:00,General Consultation,Confirmed,2,1,26-08-2026,30,Mixed signals: some historical risk but recent confirmation.

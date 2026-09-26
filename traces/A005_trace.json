@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "appointment_id": "A005",
+  "final_answer": "Appointment: A005\nPatient: Sanjay Kumar\nDoctor: Dr. Suresh\nDate & Time: 24-08-2026 11:00\n\nRisk Level: HIGH\nConfidence: HIGH\nEscalation: YES\n\nKey Evidence:\n- Appointment status is **Unconfirmed**; notes flag the patient as having \u201crepeatedly missed or rescheduled appointments.\u201d\n- Patient history shows **5 prior no\u2011shows** and **3 reschedules**, with the last confirmed appointment on 18\u201108\u20112026 (not a confirmation for this upcoming visit).\n- No recent confirmation specific to this appointment; the combination of high historical no\u2011show count and current unconfirmed status strongly indicates a likelihood of non\u2011attendance.\n\nDecision:\nThe patient has a strong pattern of missed or rescheduled visits and the current appointment is unconfirmed, with no recent confirmation for this specific slot. These factors together constitute a high risk of no\u2011show.\n\nRecommended Action:\nProactive staff follow\u2011up \u2013 have a front\u2011desk team member call or personally reach out to confirm the appointment and, if necessary, discuss alternative scheduling.\n\nEscalation Explanation:\nGiven the high risk and lack of a confirmed status, manual review and direct patient contact are required to mitigate the chance of a no\u2011show.",
+  "trace": [
+    {
+      "tool": "get_appointment_details",
+      "arguments": {
+        "appointment_id": "A005"
+      },
+      "result": {
+        "success": true,
+        "appointment_id": "A005",
+        "patient_name": "Sanjay Kumar",
+        "patient_id": "P005",
+        "doctor": "Dr. Suresh",
+        "appointment_date": "24-08-2026",
+        "time_slot": "11:00",
+        "appointment_type": "Consultation",
+        "status": "Unconfirmed",
+        "consultation_duration_mins": 30,
+        "notes": "Has repeatedly missed or rescheduled appointments."
+      }
+    },
+    {
+      "tool": "get_patient_history",
+      "arguments": {
+        "patient_id": "P005"
+      },
+      "result": {
+        "success": true,
+        "patient_id": "P005",
+        "patient_name": "Sanjay Kumar",
+        "no_show_count": 5,
+        "reschedule_count": 3,
+        "last_confirmed_date": "18-08-2026"
+      }
+    }
+  ],
+  "error": null
+}

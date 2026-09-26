@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "appointment_id": null,
+  "final_answer": "I see that \u201cP003\u201d is a patient ID. Would you like to review this patient\u2019s attendance history?",
+  "trace": [],
+  "error": null
+}

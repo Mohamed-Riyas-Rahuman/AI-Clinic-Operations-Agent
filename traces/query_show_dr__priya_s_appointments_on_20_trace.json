@@ -1,0 +1,55 @@
+{
+  "success": true,
+  "appointment_id": null,
+  "final_answer": "Dr. Dr. Priya  \nDate: 2026-08-25  \n\nA008 \u2014 Anitha K \u2014 09:00 \u2014 Confirmed  \nA010 \u2014 Divya P \u2014 10:00 \u2014 Confirmed  \nA012 \u2014 Lakshmi V \u2014 11:00 \u2014 Unconfirmed  \nA014 \u2014 Nisha P \u2014 12:00 \u2014 Confirmed  \n\nTotal appointments: 4  \nTotal scheduled minutes: 135",
+  "trace": [
+    {
+      "tool": "get_schedule_context",
+      "arguments": {
+        "appointment_date": "2026-08-25",
+        "doctor": "Dr. Priya"
+      },
+      "result": {
+        "success": true,
+        "doctor": "Dr. Priya",
+        "appointment_date": "2026-08-25",
+        "total_appointments": 4,
+        "confirmed_appointments": 3,
+        "unconfirmed_appointments": 1,
+        "pending_appointments": 0,
+        "total_scheduled_minutes": 135,
+        "appointments": [
+          {
+            "appointment_id": "A008",
+            "patient_name": "Anitha K",
+            "time_slot": "09:00",
+            "status": "Confirmed",
+            "duration": 30
+          },
+          {
+            "appointment_id": "A010",
+            "patient_name": "Divya P",
+            "time_slot": "10:00",
+            "status": "Confirmed",
+            "duration": 30
+          },
+          {
+            "appointment_id": "A012",
+            "patient_name": "Lakshmi V",
+            "time_slot": "11:00",
+            "status": "Unconfirmed",
+            "duration": 45
+          },
+          {
+            "appointment_id": "A014",
+            "patient_name": "Nisha P",
+            "time_slot": "12:00",
+            "status": "Confirmed",
+            "duration": 30
+          }
+        ]
+      }
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,48 @@
+{
+  "success": true,
+  "appointment_id": null,
+  "final_answer": "Doctor: Dr. Priya  \nDate: 2026-08-24  \n\nTotal Appointments: 3  \nConfirmed Appointments: 2  \nUnconfirmed Appointments: 1  \nPending Appointments: 0  \nTotal Scheduled Minutes: 90  \n\nAppointments:  \n- **A002** \u2013 Arun Raj \u2013 09:30 \u2013 Status: Unconfirmed \u2013 Duration: 30\u202fmin  \n- **A004** \u2013 Karthik M \u2013 10:30 \u2013 Status: Confirmed \u2013 Duration: 30\u202fmin  \n- **A006** \u2013 Priya S \u2013 11:30 \u2013 Status: Confirmed \u2013 Duration: 30\u202fmin",
+  "trace": [
+    {
+      "tool": "get_schedule_context",
+      "arguments": {
+        "appointment_date": "2026-08-24",
+        "doctor": "Dr. Priya"
+      },
+      "result": {
+        "success": true,
+        "doctor": "Dr. Priya",
+        "appointment_date": "2026-08-24",
+        "total_appointments": 3,
+        "confirmed_appointments": 2,
+        "unconfirmed_appointments": 1,
+        "pending_appointments": 0,
+        "total_scheduled_minutes": 90,
+        "appointments": [
+          {
+            "appointment_id": "A002",
+            "patient_name": "Arun Raj",
+            "time_slot": "09:30",
+            "status": "Unconfirmed",
+            "duration": 30
+          },
+          {
+            "appointment_id": "A004",
+            "patient_name": "Karthik M",
+            "time_slot": "10:30",
+            "status": "Confirmed",
+            "duration": 30
+          },
+          {
+            "appointment_id": "A006",
+            "patient_name": "Priya S",
+            "time_slot": "11:30",
+            "status": "Confirmed",
+            "duration": 30
+          }
+        ]
+      }
+    }
+  ],
+  "error": null
+}

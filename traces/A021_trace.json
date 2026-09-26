@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "appointment_id": "A021",
+  "final_answer": "Appointment: A021  \nPatient: Vimal J  \nDoctor: Dr. Suresh  \nDate & Time: 27-08-2026 09:00  \n\nRisk Level: INSUFFICIENT  \nConfidence: LOW  \nEscalation: YES  \n\nKey Evidence:\n- Appointment status is **Pending**; notes indicate \u201cNew patient; insufficient history and confirmation information.\u201d\n- Patient history shows **0** previous no\u2011shows, **0** reschedules, and **no** last confirmed date (blank).\n\nDecision:\nThe patient is new with a pending appointment and no record of prior confirmations. Although there are no past no\u2011shows, the lack of any attendance history or recent confirmation makes it impossible to assess reliability. Therefore, the evidence is insufficient to assign a definitive risk level.\n\nRecommended Action:\nManual review and confirmation of the appointment (e.g., staff should contact the patient to verify intent to attend).\n\nEscalation Explanation:\nBecause critical information (confirmation status and attendance history) is missing for a new patient, a manual review is required to avoid a potential no\u2011show.",
+  "trace": [
+    {
+      "tool": "get_appointment_details",
+      "arguments": {
+        "appointment_id": "A021"
+      },
+      "result": {
+        "success": true,
+        "appointment_id": "A021",
+        "patient_name": "Vimal J",
+        "patient_id": "P021",
+        "doctor": "Dr. Suresh",
+        "appointment_date": "27-08-2026",
+        "time_slot": "09:00",
+        "appointment_type": "Consultation",
+        "status": "Pending",
+        "consultation_duration_mins": 45,
+        "notes": "New patient; insufficient history and confirmation information."
+      }
+    },
+    {
+      "tool": "get_patient_history",
+      "arguments": {
+        "patient_id": "P021"
+      },
+      "result": {
+        "success": true,
+        "patient_id": "P021",
+        "patient_name": "Vimal J",
+        "no_show_count": 0,
+        "reschedule_count": 0,
+        "last_confirmed_date": ""
+      }
+    }
+  ],
+  "error": null
+}
